@@ -213,7 +213,6 @@ const getWeather = async () => {
 onMounted(async () => {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${state.citySearch}&units=metric&appid=eef18f70a09482a342c53291f43445c9 `)
   let result = await response.json()
-  console.log(result);
   changeData(result)
 })
 
